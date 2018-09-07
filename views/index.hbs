@@ -1,0 +1,17 @@
+
+<div class="background">
+  <div class="card">
+    <div class="card__image">
+      <img src="https://preview.ibb.co/bU7VYT/img_for_016.png" alt="Free e-book">
+    </div>
+    <div class="card__heading">
+      <h2>Subscribe</h2>
+      <p>Stay up to date with all the news from our blog and also recive a free e-book.</p>
+    </div>
+    <form class="card__form" action="/insert" method="POST">
+      <input type="email" class="form__input" name="email" required>
+      <button type="submit" class="form__submit"><i class="fas fa-check"></i></button>
+    </form>
+    <p style="color:red;">{{err}}</p>
+  </div>
+</div>

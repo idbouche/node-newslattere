@@ -1,0 +1,115 @@
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.background{
+  padding: 50px;
+  border: 20px solid #fff;
+  min-height: calc(100vh - 140px);
+  background-image: linear-gradient(to right bottom, #e9d133, #eacc2c, #eac724, #ebc11c, #ebbc12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  background: #fff;
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+
+.card__image{
+  position: relative;
+  margin: 50px auto;
+  width: 100%;
+  height: 200px;
+}
+
+.card__image img{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: center;
+  height: 100%;
+  width: auto;
+}
+
+.card__image::before{
+  content: "";
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: #f3f3f3;
+}
+
+.card__heading{
+  text-align: center;
+  padding: 0px 20px;
+  margin-bottom: 50px;
+}
+
+.card__heading h2{
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  text-transform: uppercase;
+  color: #222;
+  margin: 0;
+}
+
+.card__heading p{
+  color: #555;
+}
+
+.card__form{
+  position: relative;
+  width: 100%;
+  padding: 0 20px 30px 20px;
+}
+
+.form__input{
+  padding: 5px 10px;
+  width: calc(100% - 60px);
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 20px;
+  transition: .2s all ease-in-out;
+  color: #222;
+}
+
+.form__input:hover{
+  border: 1px solid #c4c4c4;  
+}
+
+.form__input:focus{
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #EBBC12;
+}
+
+.form__submit{
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  right: 62px;
+  border: none;
+  background-image: linear-gradient(to right bottom, #e9d133, #eacc2c, #eac724, #ebc11c, #ebbc12);
+  color: #fff;
+  height: 50px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.form__submit:hover, .form__submit:focus{
+  background-image: linear-gradient(to right top, #e9d133, #eacc2c, #eac724, #ebc11c, #ebbc12);
+  border: none;
+  outline: none;
+  box-shadow: none;
+}

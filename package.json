@@ -1,0 +1,22 @@
+{
+  "name": "05-express-first-app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "PORT=80 node ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "email-validator": "^2.0.4",
+    "express": "~4.13.1",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.4.11",
+    "mongoose-type-email": "^1.0.9",
+    "morgan": "~1.6.1",
+    "nodemon": "^1.18.4",
+    "serve-favicon": "~2.3.0"
+  }
+}
