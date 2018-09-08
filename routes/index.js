@@ -20,7 +20,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/box', function(req, res, next) {
-  res.render('template.html');
+  res.render('template');
 });
 
 router.get('/get-data', function(req, res, next) {
