@@ -19,6 +19,10 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
+router.get('/box', function(req, res, next) {
+  res.render('template.html');
+});
+
 router.get('/get-data', function(req, res, next) {
   UserData.find()
       .then(function(doc) {
